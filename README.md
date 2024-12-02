@@ -22,7 +22,7 @@ A private library for storing and exploring a collection of short texts, poems, 
 
 ### **Add Entry Menu**
 ![Entry Menu Screenshot](assets/addnew.png)  
-*Above: Sub-menu with types of entries.*
+*Above: Sub-menu with types of entry.*
 
 ### **Browsing**
 ![Browsing Texts Screenshot](assets/browse.png)  
