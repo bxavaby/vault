@@ -30,7 +30,7 @@ A private library for storing and exploring a collection of short texts, poems, 
 
 ### **Favourites List**
 ![Favourites Screenshot](assets/favs.png)  
-*Above: List of favourited titles.*
+*Above: List of preferred titles.*
 
 ---
 
