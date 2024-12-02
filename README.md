@@ -6,7 +6,7 @@ A private library for storing and exploring a collection of short texts, poems, 
 
 ## **Demo**
 ![Verse Vault Demo](assets/verse.gif)  
-*Above → A brief walkthrough of the core features.*
+*Above: A brief walkthrough of the core features.*
 
 ---
 
@@ -22,15 +22,15 @@ A private library for storing and exploring a collection of short texts, poems, 
 
 ### **Add Entry Menu**
 ![Entry Menu Screenshot](assets/addnew.png)  
-*Above → Sub-menu with types of entries.*
+*Above: Sub-menu with types of entries.*
 
 ### **Browsing**
 ![Browsing Texts Screenshot](assets/browse.png)  
-*Above → Sub-menu with types of search.*
+*Above: Sub-menu with types of search.*
 
 ### **Favourites List**
 ![Favourites Screenshot](assets/favs.png)  
-*Above → List of favourited titles.*
+*Above: List of favourited titles.*
 
 ---
 
