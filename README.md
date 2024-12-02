@@ -88,7 +88,7 @@ A private library for storing and exploring a collection of short texts, poems, 
         ├── data_manager.py     # handles loading and saving JSON files
         ├── display.py          # handles terminal display and styling
         ├── fetcher.py          # internal fetcher
-        ├── __init__.py         # module initializer
+        └── __init__.py         # module initializer
 ```
 
 ---
