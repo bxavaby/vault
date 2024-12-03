@@ -1,12 +1,12 @@
 # **Verse Vault**
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=flat-square)
-![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
-![Platform](https://img.shields.io/badge/Platform-Terminal-lightgrey?style=flat-square)
-![Contributions](https://img.shields.io/badge/Contributions-Welcome-orange?style=flat-square)
-![GitHub issues](https://img.shields.io/github/issues/bxavaby/vault?style=flat-square)
-![GitHub forks](https://img.shields.io/github/forks/bxavaby/vault?style=flat-square)
-![GitHub stars](https://img.shields.io/github/stars/bxavaby/vault?style=flat-square)
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=flat-square)](https://www.python.org/downloads/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
+[![Platform](https://img.shields.io/badge/Platform-Terminal-lightgrey?style=flat-square)](#)
+[![Contributions](https://img.shields.io/badge/Contributions-Welcome-orange?style=flat-square)](CONTRIBUTING.md)
+[![GitHub issues](https://img.shields.io/github/issues/bxavaby/vault?style=flat-square)](https://github.com/bxavaby/vault/issues)
+[![GitHub forks](https://img.shields.io/github/forks/bxavaby/vault?style=flat-square)](https://github.com/bxavaby/vault/network)
+[![GitHub stars](https://img.shields.io/github/stars/bxavaby/vault?style=flat-square)](https://github.com/bxavaby/vault/stargazers)
 
 
 A private library for storing and exploring a collection of short texts, poems, apophthegms, and other literary pieces. This program provides a simple and interactive way to browse, fetch, and manage your library of texts.
@@ -164,9 +164,9 @@ Personalize the ASCII art logo displayed on startup.
 ### **2. Add New Categories**
 Tweak your library by:
 
-- **Deleting unwanted entries (manually)** in the `library/` directory ->  select the JSON file -> delete any or all entries manually.
-- **Adding new enties (manually)** in the `library/` directory ->  select the JSON file -> add new entries manually.
-- **Adding new entries (automatically)** run the program -> select option 4 ("Fill up your vault!") -> add the content interactively -> the program appends the new entry to the selected JSON automatically.
+- **Deleting unwanted entries (manually)** in the `library/` directory >> select the JSON file >> delete any or all entries manually.
+- **Adding new enties (manually)** in the `library/` directory >> select the JSON file >> add new entries manually.
+- **Adding new entries (automatically)** run the program >> select option 4 ("Fill up your vault!") >> add the content interactively >> the program appends the new entry to the selected JSON automatically.
 
 ### **3. Change Display Colors**
 
@@ -174,7 +174,7 @@ Tweak your library by:
 
 ### **3. Customize Favorites**
 
-- **Picking your preferred titles (manually)** in the `library/` directory ->  select the JSON file -> edit the value directly (yes/no).
+- **Picking your preferred titles (manually)** in the `library/` directory >> select the JSON file >> edit the value directly (yes/no).
 - **Picking your preferred titles (automatically)** when adding a new entry (option 4), the program requests a boolean value (yes/no).
 
 
