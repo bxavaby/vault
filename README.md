@@ -4,9 +4,9 @@
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 ![Platform](https://img.shields.io/badge/Platform-Terminal-lightgrey?style=flat-square)
 ![Contributions](https://img.shields.io/badge/Contributions-Welcome-orange?style=flat-square)
-![GitHub issues](https://img.shields.io/github/issues/bxavaby/verse-vault?style=flat-square)
-![GitHub forks](https://img.shields.io/github/forks/bxavaby/verse-vault?style=flat-square)
-![GitHub stars](https://img.shields.io/github/stars/bxavaby/verse-vault?style=flat-square)
+![GitHub issues](https://img.shields.io/github/issues/bxavaby/vault?style=flat-square)
+![GitHub forks](https://img.shields.io/github/forks/bxavaby/vault?style=flat-square)
+![GitHub stars](https://img.shields.io/github/stars/bxavaby/vault?style=flat-square)
 
 
 A private library for storing and exploring a collection of short texts, poems, apophthegms, and other literary pieces. This program provides a simple and interactive way to browse, fetch, and manage your library of texts.
