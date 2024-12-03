@@ -125,7 +125,6 @@ A private library for storing and exploring a collection of short texts, poems, 
    python main.py
    ```
    
-   
 ---
 
 ## **Acknowledgments**
