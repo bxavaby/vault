@@ -39,15 +39,19 @@ A private library for storing and exploring a collection of short texts, poems, 
 - Basic functionality is implemented, including:
   - Text browsing and randomization features.
   - Modular utilities for managing data, display, and fetching.
+  
 - The database is structured using JSON files stored in the `library/` directory.
+
 - Git is used for version control with the following commands:
   - `git init`, `git clone`, `git add`, `git commit`, `git push`, `git pull`, `git status`, `git log`.
+
 - PyCache files have been ignored using `.gitignore`.
 
 ---
 
 ## **Development Tools**
 - **Code Editors**:
+
   - **Micro**:
     - `Ctrl+S` → Save file
     - `Ctrl+Q` → Quit editor
@@ -61,8 +65,10 @@ A private library for storing and exploring a collection of short texts, poems, 
     - `Ctrl+F` → Find text
     - `Ctrl+Shift+P` → Command Palette
     - `Alt+Shift+F` → Format document
+    
 - **Git**:
   - All project updates are tracked and committed using Git.
+  
 - **AI Integration**:
   - Copilot is set up inside VS Code for prompt code assistance and debugging.
   - [Fabric Framework](https://github.com/danielmiessler/fabric):  
@@ -101,18 +107,24 @@ A private library for storing and exploring a collection of short texts, poems, 
 
 #### **Steps to Run**
 1. **Clone the Repository**:
+
    ```bash
    git clone https://github.com/bxavaby/verse-vault.git
    cd verse-vault
    ```
+   
 2. **Install Dependencies**:
+
    ```bash
    pip install -r requirements.txt
    ```
+   
 3. **Run the Program**:
+
    ```bash
    python main.py
    ```
+   
    
 ---
 
