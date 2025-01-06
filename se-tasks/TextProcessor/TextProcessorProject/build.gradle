@@ -1,0 +1,70 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.example'
+version = '1.0-SNAPSHOT'
+application {
+    mainClass = 'com.example.TextProcessor'
+}
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'commons-io:commons-io:2.11.0'
+}
+
+task createInputFile {
+    def inputDir = file("$projectDir/input")
+    def inputFile = file("$projectDir/input/sample.txt")
+
+    doLast {
+        inputDir.mkdirs()
+        inputFile.text = '''Hello Gradle!
+This is a sample text file.
+We will count words and do other operations.
+Learn Gradle, it's fun!'''
+        println "Created sample input file at: ${inputFile.absolutePath}"
+    }
+}
+
+task countWords {
+    dependsOn createInputFile
+    def inputFile = file("$projectDir/input/sample.txt")
+    def outputDir = file("$projectDir/output")
+    def reportFile = file("$projectDir/output/word-count.txt")
+
+    doLast {
+        outputDir.mkdirs()
+        def wordCount = inputFile.text.split(/\s+/).length
+        reportFile.text = "Word count: ${wordCount}"
+        println "Word count report generated at: ${reportFile.absolutePath}"
+    }
+}
+
+task createSummary {
+    dependsOn countWords
+    def inputFile = file("$projectDir/input/sample.txt")
+    def outputDir = file("$projectDir/output")
+    def summaryFile = file("$projectDir/output/summary.txt")
+
+    doLast {
+        def content = inputFile.text
+        def lines = content.readLines()
+        def chars = content.length()
+        def words = content.split(/\s+/).length
+
+        summaryFile.text = """Text Analysis Summary
+========================
+Number of lines: ${lines.size()}
+Number of words: ${words}
+Number of characters: ${chars}
+Average words per line: ${String.format("%.2f", words / lines.size())}
+"""
+        println "Summary generated at: ${summaryFile.absolutePath}"
+    }
+}

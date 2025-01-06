@@ -1,0 +1,6 @@
+Text Analysis Summary
+========================
+Number of lines: 4
+Number of words: 20
+Number of characters: 110
+Average words per line: 5.00

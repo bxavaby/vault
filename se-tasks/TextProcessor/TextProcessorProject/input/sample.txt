@@ -1,0 +1,4 @@
+Hello Gradle!
+This is a sample text file.
+We will count words and do other operations.
+Learn Gradle, it's fun!
