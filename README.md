@@ -19,6 +19,7 @@ A private library for storing and exploring a collection of short texts, poems, 
 - [Exemplary Screenshots](#exemplary-screenshots)
 - [Current Status](#current-status)
 - [Development Tools](#development-tools)
+- [Domain Driven Design (DDD)](#domain-driven-design-ddd)
 - [Project Structure](#project-structure)
 - [Installation and Usage](#installation-and-usage)
 - [Customization Guide](#customization-guide)
@@ -95,6 +96,55 @@ A private library for storing and exploring a collection of short texts, poems, 
   - Copilot is set up inside VS Code for prompt code assistance and debugging.
   - [Fabric Framework](https://github.com/danielmiessler/fabric):  
       Utilized for its sleek and simple solution to leverage LLMs directly from the command line, enhancing workflow efficiency and allowing for swift experimentation.
+
+---
+
+# **Domain-Driven Design (DDD)**
+
+## 🔎 **A) Event-Storming: Discovering Domains**
+To define the functional areas of **Verse Vault**, I conducted **Event-Storming**, ensuring the project remains modular and extensible. The primary objective of this tool is to **help users store, explore, and manage a literary collection interactively**.
+
+## 📖 **Identified Domains**
+| **Domain**                     | **Description**                                         | **Type** |
+|---------------------------------|---------------------------------------------------------|----------|
+| **Vault & Content Management**  | Stores and organizes short texts, poems, and quotes   | **Core** |
+| **Discovery & Retrieval**       | Allows users to search, fetch, and randomize entries  | **Core** |
+| **User Customization**          | Enables users to modify the database, add/edit texts  | Supporting |
+| **Styling & Display**           | Formats terminal output for readability               | Supporting |
+| **CLI & Interactive Commands**  | Handles user interactions via command-line interface  | **Core** |
+| **Favorites & Personalization** | Lets users mark preferred texts for quick access     | Supporting |
+
+
+## 📌 **B) Core Domain Chart**
+Based on an event-storming process, the ![chart](media/core_domain_chart.odg) found in ![media](media/) highlights **core** and **supporting** domains, illustrating how they interact.
+
+- **CLI & Interactive Input** serves as the main user interface.
+- **Vault & Management** handles text storage and retrieval.
+- **Discovery & Fetch** helps users explore the content.
+- **Styling & Display** ensure readable output.
+- **Personalization & Customization** enhance the user experience.
+
+# 📊 **Metrics & Code Quality**
+
+To ensure **high performance, maintainability, and code quality**, Verse Vault was analyzed using **SonarQube and additional metrics**.
+
+## 1️⃣ **SonarQube Code Quality Metrics**
+I ran a **SonarQube analysis**, focusing on:
+- **Cyclomatic Complexity**: Measures code paths and branching. A **low complexity score** ensures maintainable code.
+- **Code Smells**: Identifies non-critical issues that could lead to technical debt.
+
+## 2️⃣ **Code Coverage Metric**
+**Test coverage** was evaluated to ensure the codebase is well-tested.
+
+## 📝 **Findings**:
+- **Low cyclomatic complexity**, ensuring easy readability.
+- A few minor **code smells** (e.g., redundant imports), which have been addressed.
+- **Areas for improvement**: Need better test coverage for error-handling and edge cases.
+
+# ✅ **Conclusion**
+- **Defined core domains** through **DDD event-storming**, ensuring clear structure.
+- **Mapped inter-domain relationships** in a structured diagram.
+- **Implemented code quality metrics** with **SonarQube & test coverage**.
 
 ---
 
