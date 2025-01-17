@@ -19,7 +19,7 @@ A private library for storing and exploring a collection of short texts, poems, 
 - [Exemplary Screenshots](#exemplary-screenshots)
 - [Current Status](#current-status)
 - [Development Tools](#development-tools)
-- [Domain Driven Design (DDD)](#domain-driven-design)
+- [Domain Driven Design (DDD)](#domain-driven-design-ddd)
 - [Project Structure](#project-structure)
 - [Installation and Usage](#installation-and-usage)
 - [Customization Guide](#customization-guide)
