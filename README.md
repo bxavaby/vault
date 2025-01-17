@@ -19,7 +19,7 @@ A private library for storing and exploring a collection of short texts, poems, 
 - [Exemplary Screenshots](#exemplary-screenshots)
 - [Current Status](#current-status)
 - [Development Tools](#development-tools)
-- [Domain Driven Design (DDD)](#domain-driven-design-ddd)
+- [Domain Driven Design (DDD)](#domain-driven-design)
 - [Project Structure](#project-structure)
 - [Installation and Usage](#installation-and-usage)
 - [Customization Guide](#customization-guide)
@@ -99,9 +99,9 @@ A private library for storing and exploring a collection of short texts, poems, 
 
 ---
 
-# 🏗️ **Domain-Driven Design (DDD)**
+## 🏗️ **Domain-Driven Design (DDD)**
 
-## 🔎 **A) Event-Storming: Discovering Domains**
+### 🔎 **A) Event-Storming: Discovering Domains**
 To define the functional areas of **Verse Vault**, I conducted **Event-Storming**, ensuring the project remains modular and extensible. The primary objective of this tool is to **help users store, explore, and manage a literary collection interactively**.
 
 ### 📖 **Identified Domains**
@@ -114,10 +114,9 @@ To define the functional areas of **Verse Vault**, I conducted **Event-Storming*
 | **CLI & Interactive Commands**  | Handles user interactions via command-line interface  | **Core** |
 | **Favorites & Personalization** | Lets users mark preferred texts for quick access     | Supporting |
 
----
 
-## 📌 **B) Core Domain Chart**
-Based on an event-storming process, the ![chart](media/core_domain_chart.odg) found in !["media"](media/) highlights **core** and **supporting** domains, illustrating how they interact.
+### 📌 **B) Core Domain Chart**
+Based on an event-storming process, the ![chart](media/core_domain_chart.odg) found in ![media](media/) highlights **core** and **supporting** domains, illustrating how they interact.
 
 - **CLI & Interactive Input** serves as the main user interface.
 - **Vault & Management** handles text storage and retrieval.
@@ -125,28 +124,24 @@ Based on an event-storming process, the ![chart](media/core_domain_chart.odg) fo
 - **Styling & Display** ensure readable output.
 - **Personalization & Customization** enhance the user experience.
 
----
-
-# 📊 **Metrics & Code Quality**
+## 📊 **Metrics & Code Quality**
 
 To ensure **high performance, maintainability, and code quality**, Verse Vault was analyzed using **SonarQube and additional metrics**.
 
-## 1️⃣ **SonarQube Code Quality Metrics**
+### 1️⃣ **SonarQube Code Quality Metrics**
 I ran a **SonarQube analysis**, focusing on:
 - **Cyclomatic Complexity**: Measures code paths and branching. A **low complexity score** ensures maintainable code.
 - **Code Smells**: Identifies non-critical issues that could lead to technical debt.
 
-## 2️⃣ **Code Coverage Metric**
+### 2️⃣ **Code Coverage Metric**
 **Test coverage** was evaluated to ensure the codebase is well-tested.
 
-📝 **Findings**:
+### 📝 **Findings**:
 - **Low cyclomatic complexity**, ensuring easy readability.
 - A few minor **code smells** (e.g., redundant imports), which have been addressed.
 - **Areas for improvement**: Need better test coverage for error-handling and edge cases.
 
----
-
-# ✅ **Conclusion**
+## ✅ **Conclusion**
 - **Defined core domains** through **DDD event-storming**, ensuring clear structure.
 - **Mapped inter-domain relationships** in a structured diagram.
 - **Implemented code quality metrics** with **SonarQube & test coverage**.
