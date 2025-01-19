@@ -107,7 +107,7 @@ To document the architecture and behavior of *Verse Vault*, I have created the f
 ## 1️⃣ Use-Case Diagram
 The **Use-Case Diagram** visualizes how users interact with the system, showcasing different features available in the CLI.
 
-📌 **Diagram:**  
+📌 
 ![Use-Case Diagram](media/use_case_diagram.png)
 
 - The **User** interacts with the CLI interface.
@@ -123,7 +123,7 @@ The **Use-Case Diagram** visualizes how users interact with the system, showcasi
 ## 2️⃣ Component Diagram
 The **Component Diagram** represents the structural organization of the program, showing how different components communicate.
 
-📌 **Diagram:**  
+📌
 ![Component Diagram](media/component_diagram.png)
 
 - The **CLI Interface** serves as the user’s access point.
@@ -137,7 +137,7 @@ The **Component Diagram** represents the structural organization of the program,
 ## 3️⃣ Activity Diagram
 The **Activity Diagram** illustrates the sequence of actions when a user fetches an entry.
 
-📌 **Diagram:**  
+📌 
 ![Activity Diagram](media/activity_diagram.png)
 
 - The process starts with the user selecting the *Browse your vault* option from the menu, followed by the category *Authors* or *Genres*.
