@@ -102,7 +102,7 @@ A private library for storing and exploring a collection of short texts, poems, 
 
 # UML Diagrams
 
-To document the architecture and behavior of *Verse Vault*, I have created the following **UML diagrams**:
+To document the architecture and behavior of *Verse Vault*, I have created the following **diagrams**:
 
 ## 1️⃣ Use-Case Diagram
 The **Use-Case Diagram** visualizes how users interact with the system, showcasing different features available in the CLI.
