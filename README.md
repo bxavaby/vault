@@ -19,6 +19,7 @@ A private library for storing and exploring a collection of short texts, poems, 
 - [Exemplary Screenshots](#exemplary-screenshots)
 - [Current Status](#current-status)
 - [Development Tools](#development-tools)
+- [UML Diagrams](#uml-diagrams)
 - [Domain Driven Design (DDD)](#domain-driven-design-ddd)
 - [Project Structure](#project-structure)
 - [Installation and Usage](#installation-and-usage)
@@ -96,6 +97,55 @@ A private library for storing and exploring a collection of short texts, poems, 
   - Copilot is set up inside VS Code for prompt code assistance and debugging.
   - [Fabric Framework](https://github.com/danielmiessler/fabric):  
       Utilized for its sleek and simple solution to leverage LLMs directly from the command line, enhancing workflow efficiency and allowing for swift experimentation.
+
+---
+
+# UML Diagrams
+
+To document the architecture and behavior of *Verse Vault*, I have created the following **UML diagrams**:
+
+## 1️⃣ Use-Case Diagram
+The **Use-Case Diagram** visualizes how users interact with the system, showcasing different features available in the CLI.
+
+📌 **Diagram:**  
+![Use-Case Diagram](media/use_case_diagram.png)
+
+- The **User** interacts with the CLI interface.
+- The user can perform actions such as:
+  - **Browsing** the library of texts.
+  - **Fetching** a random entry.
+  - **Searching** for specific texts by title or author.
+  - **Adding** new texts to the collection.
+  - **Favoriting** entries for later access.
+
+---
+
+## 2️⃣ Component Diagram
+The **Component Diagram** represents the structural organization of the program, showing how different components communicate.
+
+📌 **Diagram:**  
+![Component Diagram](media/component_diagram.png)
+
+- The **CLI Interface** serves as the user’s access point.
+- The **Library (JSON Storage)** holds text data.
+- **Utility Functions** provide helper methods for various operations.
+- **Display Manager** formats terminal output for readability.
+- **Data Manager** handles reading and writing to the storage.
+
+---
+
+## 3️⃣ Activity Diagram
+The **Activity Diagram** illustrates the sequence of actions when a user fetches an entry.
+
+📌 **Diagram:**  
+![Activity Diagram](media/activity_diagram.png)
+
+- The process starts with the user selecting the *Browse your vault* option from the menu, followed by the category *Authors* or *Genres*.
+- The user decides between:
+  - **Fetching a random entry**.
+  - **Searching for a specific entry, by listing them all**.
+- The system retrieves the selected text and **displays it**.
+- The process ends when the entry is shown and the user hits **ENTER**.
 
 ---
 
