@@ -1,16 +1,29 @@
-def convert_to_euro(amount_in_dollars):
-    dollar_to_euro_rate = 0.85
-    return amount_in_dollars * dollar_to_euro_rate
+import logging
 
-def demo_refact(money_net): 
-    tax_rate = 0.3
-    money_after_tax = money_net * (1 - tax_rate)
+logging.basicConfig(level=logging.INFO, format="%(message)s")
 
-    money_in_euro = convert_to_euro(money_after_tax)
 
+def convert_currency(amount, rate=0.85):
+    return amount * rate
+
+
+def apply_tax(income, tax_rate=0.3):
+    return income * (1 - tax_rate)
+
+
+def process_conversion(money_net, tax_rate=0.3, conversion_rate=0.85):
+    net_after_tax = apply_tax(money_net, tax_rate)
+    money_in_euro = convert_currency(net_after_tax, conversion_rate)
     return money_in_euro
 
-net_income = 1
-money_in_euro = demo_refact(net_income)
-print(f"\nMoney in $ before tax: {net_income}")
-print(f"\nMoney in Euro after tax: {money_in_euro:.2f}")
+
+def display_conversion_results(original, converted, currency="EUR"):
+    logging.info(f"\nMoney before tax: ${original:.2f}")
+    logging.info(f"Money after tax in {currency}: €{converted:.2f}")
+
+
+if __name__ == "__main__":
+    net_income = 1
+    money_in_euro = process_conversion(net_income)
+
+    display_conversion_results(net_income, money_in_euro)
