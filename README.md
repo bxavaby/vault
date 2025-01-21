@@ -293,7 +293,7 @@ For a more detailed reference on Clean Code principles, check out the **PDF chea
 
 #### 8. Refractoring
 
-This section demonstrates two refactoring examples taken from the ![refactoring.py](se-tasks/refractoring.py) script.
+This section demonstrates two refactoring examples taken from the ![refractoring.py](se-tasks/refractoring.py) script.
 
 Each refactoring includes:  
 ✔ The **original code**.  
