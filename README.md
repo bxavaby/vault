@@ -36,7 +36,7 @@ A private library for storing and exploring a collection of short texts, poems, 
 | `git pull origin master`   | Fetch and merge the latest updates from the remote repository. |
 
 For reference, these commands have been applied in multiple commits across the project:  
-🔗 **[GitHub Commit History](https://github.com/bxavaby/vault/commits/main)**
+🔗 **[GitHub Commit History](https://github.com/bxavaby/vault/commits/master)**
 
 ---
 
