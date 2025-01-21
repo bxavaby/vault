@@ -36,6 +36,7 @@ A private library for storing and exploring a collection of short texts, poems, 
 | `git pull origin master`   | Fetch and merge the latest updates from the remote repository. |
 
 For reference, these commands have been applied in multiple commits across the project:  
+
 🔗 **[GitHub Commit History](https://github.com/bxavaby/vault/commits/master)**
 
 ---
@@ -95,7 +96,8 @@ The **Activity Diagram** illustrates the sequence of actions when a user fetches
 #### Currently:
 
 ![Trello (Simple)](media/trello_requirements.png)
-- ![Link to Workspace](https://trello.com/invite/b/678fed2adab3041ec224dd07/ATTI4a251d1916f5f228df66c26d746aff325DBA7BE5/verse-vault)
+
+![Link to Workspace](https://trello.com/invite/b/678fed2adab3041ec224dd07/ATTI4a251d1916f5f228df66c26d746aff325DBA7BE5/verse-vault)
 
 ![Jira (Professional)](media/jira_requirements.png)
 
