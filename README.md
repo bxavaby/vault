@@ -532,7 +532,6 @@ Before I provide a list of all the code editors/IDE's + favourite shortcuts I ha
 ### **Using Tuples Instead of Lists**
 ```python
 def get_supported_text_types():
-    """Returns an immutable collection of text types."""
     return ("Poem", "Short Story", "Apophthegm", "Other")
 ```
 
