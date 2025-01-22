@@ -129,7 +129,7 @@ The **Activity Diagram** illustrates the sequence of actions when a user fetches
 #### 🔎 **A) Event-Storming: Discovering Domains**
 To define the functional areas of **Verse Vault**, I conducted **Event-Storming**, ensuring the project remains modular and extensible. The primary objective of this tool is to **help users store, explore, and manage a literary collection interactively**.
 
-#### 📖 **Identified Domains**
+#### **Identified Domains**
 
 | **Domain**                     | **Description**                                         | **Type** |
 |---------------------------------|---------------------------------------------------------|----------|
@@ -141,7 +141,7 @@ To define the functional areas of **Verse Vault**, I conducted **Event-Storming*
 | **Favorites & Personalization** | Lets users mark preferred texts for quick access     | Supporting |
 
 
-#### 📌 **B) Core Domain Chart**
+#### **B) Core Domain Chart**
 Based on an event-storming process, the [chart](media/core_domain_chart.odg) found in [media](media/) highlights **core** domains.
 
 - **CLI & Interactive Input** serves as the main user interface.
