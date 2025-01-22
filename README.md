@@ -449,23 +449,39 @@ start docs/build/html/index.html     # Windows
 The project integrates **GitHub Actions** to automate testing and documentation.  
 The CI/CD pipeline ensures that every change to the repository is **automatically tested and validated** before deployment.
 
-## **CI/CD Workflow**  
+### **CI/CD Workflow**  
 
 The workflow is triggered on:
 - **Every push** to the `master` branch.  
 - **Every pull request** targeting `master`.  
 
-## **GitHub Actions Workflow Config**  
+### **GitHub Actions Workflow Config**  
 
 The **GitHub Actions workflow file** is located in:  
 ```plaintext
 .github/workflows/ci.yml
 ```
-![The Contents of ci.yml](media/ciyml.png)
+
+### **The Contents of ci.yml:**
+
+![ciyml](media/ciyml.png)
 
 ---
 
 #### 11. Unit Tests
+
+Incorporated **unit tests** within the codebase to improve **stability and maintainability**.  
+
+### Data Management Tests (`test_data_manager.py`)**
+- *Load Empty Library*: Ensures that attempting to load a non-existent JSON file returns an empty list.
+- *Save and Load Data*: Verifies that data can be successfully saved to a JSON file and retrieved without corruption.
+
+### Display Tests (`test_display.py`)**
+- *Ornament Formatting*: Checks that the terminal ornamentation function returns correctly formatted ASCII text.
+
+### Fetching Logic Tests (`test_fetcher.py`)**
+- *Fetch by Title*: Ensures that a literary entry can be retrieved correctly based on title.
+- *Mocked Data Retrieval*: Validates that fetching functions work correctly using mock JSON data.
 
 ---
 
