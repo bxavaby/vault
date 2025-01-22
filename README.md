@@ -294,7 +294,7 @@ For a more detailed reference on Clean Code principles, check out the **PDF chea
 
 This section demonstrates two refactoring examples taken from the [refractoring.py](se-tasks/refractoring.py) script.
 
-Each refactoring includes:  
+Each example includes:  
 ✔ The **original code**.  
 ✔ The **refactored version**.  
 ✔ An **explanation of improvements**.
