@@ -1,4 +1,3 @@
-import shutil
 import random
 from colorama import init, Fore, Style
 
@@ -8,13 +7,14 @@ from .utils import clear_screen
 
 init(autoreset=True)
 
+
 def display_logo():
     color_map = {
         '{RED}': Fore.RED,
         '{LIGHTBLACK_EX}': Fore.LIGHTBLACK_EX,
         '{RESET}': Fore.RESET
     }
-    
+
     with open('assets/logo.txt', 'r', encoding='utf-8') as file:
         logo = file.read()
 
@@ -23,15 +23,17 @@ def display_logo():
 
     print(logo)
 
+
 def ornament():
     orn = f"""
-{Fore.LIGHTBLACK_EX}                                                                   
-                                                                                          
-_/_/_/_/_/  _/_/_/_/_/  _/_/_/_/_/  _/_/_/_/_/  _/_/_/_/_/ 
-                   
+{Fore.LIGHTBLACK_EX}
+
+_/_/_/_/_/  _/_/_/_/_/  _/_/_/_/_/  _/_/_/_/_/  _/_/_/_/_/
+
 {Style.RESET_ALL}
     """
-    print(orn)
+    return orn
+
 
 def display_menu():
     menu_items = [
@@ -51,6 +53,7 @@ def display_menu():
     choice = input(Fore.LIGHTCYAN_EX + Style.BRIGHT + "Choose an option: " + Style.RESET_ALL)
     return choice
 
+
 def display_browse_menu():
     clear_screen()
     ornament()
@@ -68,6 +71,7 @@ def display_browse_menu():
     print(Fore.LIGHTBLACK_EX + "═════════════════════════════" + Style.RESET_ALL)
     choice = input(Fore.LIGHTCYAN_EX + Style.BRIGHT +  "Choose an option: " + Style.RESET_ALL)
     return choice
+
 
 def browse_authors():
     all_entries = load_all_libraries()
@@ -93,6 +97,7 @@ def browse_authors():
                         clear_screen()
                         print(Fore.LIGHTMAGENTA_EX + f"Title: {entry['title']}\n\n{entry['content']}" + Style.RESET_ALL)
                         input("Press Enter to continue...")
+
 
 def browse_genres():
     all_entries = load_all_libraries()
@@ -120,6 +125,7 @@ def browse_genres():
                         clear_screen()
                         print(Fore.LIGHTMAGENTA_EX + f"Title: {entry['title']}\n\n{entry['content']}" + Style.RESET_ALL)
                         input("Press Enter to continue...")
+
                         
 def browse_titles():
     all_entries = load_all_libraries()
@@ -133,6 +139,7 @@ def browse_titles():
                 clear_screen()
                 print(Fore.LIGHTMAGENTA_EX + f"Title: {entry['title']}\n\n{entry['content']}" + Style.RESET_ALL)
                 input("Press Enter to continue...")
+
 
 def add_text():
     clear_screen()
@@ -197,6 +204,7 @@ def add_text():
     input("Press Enter to continue...")
 
     print("\n" + Fore.LIGHTWHITE_EX + f"I will be taking a look into your {text_type} while you’re gone, don’t mind me. {author} is a great entertainer of the dead. See you later, fellow bibliophile." + Style.RESET_ALL)
+
 
 def show_favourites():
     favourites = fetch_favourites()
