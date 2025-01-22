@@ -1,0 +1,50 @@
+name: CI/CD Pipeline
+
+on: 
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.9'
+
+      - name: Install Dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run Linting (Flake8)
+        run: |
+          make lint
+
+      - name: Run Tests with Coverage
+        run: |
+          make coverage
+
+      - name: Generate Documentation (Sphinx)
+        run: |
+          make docs
+
+      - name: Upload Coverage Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage-report
+          path: htmlcov
+
+      - name: Upload Documentation
+        uses: actions/upload-artifact@v3
+        with:
+          name: sphinx-docs
+          path: docs/build/html
