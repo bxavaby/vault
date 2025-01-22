@@ -446,6 +446,23 @@ start docs/build/html/index.html     # Windows
 
 #### 10. Continuous Delivery
 
+The project integrates **GitHub Actions** to automate testing and documentation.  
+The CI/CD pipeline ensures that every change to the repository is **automatically tested and validated** before deployment.
+
+## **CI/CD Workflow**  
+
+The workflow is triggered on:
+- **Every push** to the `master` branch.  
+- **Every pull request** targeting `master`.  
+
+## **GitHub Actions Workflow Config**  
+
+The **GitHub Actions workflow file** is located in:  
+```plaintext
+.github/workflows/ci.yml
+```
+![The Contents of ci.yml](media/ciyml.png)
+
 ---
 
 #### 11. Unit Tests
