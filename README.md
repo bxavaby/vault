@@ -643,6 +643,12 @@ Uses a lambda function to define a sorting key in a single line.
 
 - PyCache files have been ignored using `.gitignore`.
 
+### December 20, 2024:
+- Every functionality is implemented, including:
+  - Favoriting, filtered browsing and optimized randomization features.
+  - Clean, flask8-approved, and modular utils.
+  - Hand-picked palette and polished ornamentation.
+
 ---
 
 ## **Project Structure**
