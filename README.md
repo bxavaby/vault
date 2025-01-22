@@ -454,6 +454,7 @@ start docs/build/html/index.html     # Windows
 ---
 
 #### 12. IDE
+Before I provide a list of all the code editors/IDE's + favourite shortcuts I have used while working on *Verse Vault*, I must clarify that **Micro** was my top pick most of the times, **VS Code** was used only when I felt the need to use **Copilot**, which I talk about in the next task, and as for **Neovim**, it was sort of experimental, but a great learning experience.
 
 - **Code Editors**:
 
@@ -476,9 +477,9 @@ start docs/build/html/index.html     # Windows
 ### 13. AI Coding
 
 - **AI Integration**:
-  - Copilot is set up inside VS Code for prompt code assistance and debugging.
+  - Copilot was set up inside VS Code for prompt code assistance and debugging. I had already configured it through GitHub, by connecting it to VS Code and installing the plug-in.
   - [Fabric Framework](https://github.com/danielmiessler/fabric):  
-      Utilized for its sleek and simple solution to leverage LLMs directly from the command line, enhancing workflow efficiency and allowing for swift experimentation.
+      Used it for its sleek and simple solution to leverage LLMs directly from the command line, enhancing workflow efficiency and allowing for swift experimentation.
 
 ---
 
