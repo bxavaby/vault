@@ -9,7 +9,6 @@ A private library for storing and exploring a collection of short texts, poems, 
 ## **Table of Contents**
 
 - [Project Checklist](#project-checklist)
-- [Development Tools](#development-tools)
 - [Demo](#demo)
 - [Exemplary Screenshots](#exemplary-screenshots)
 - [Current Status](#current-status)
