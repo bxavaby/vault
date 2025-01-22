@@ -472,14 +472,14 @@ The **GitHub Actions workflow file** is located in:
 
 Incorporated **unit tests** within the codebase to improve **stability and maintainability**.  
 
-### Data Management Tests (`test_data_manager.py`)**
+### Data Management Tests (`test_data_manager.py`)
 - *Load Empty Library*: Ensures that attempting to load a non-existent JSON file returns an empty list.
 - *Save and Load Data*: Verifies that data can be successfully saved to a JSON file and retrieved without corruption.
 
-### Display Tests (`test_display.py`)**
+### Display Tests (`test_display.py`)
 - *Ornament Formatting*: Checks that the terminal ornamentation function returns correctly formatted ASCII text.
 
-### Fetching Logic Tests (`test_fetcher.py`)**
+### Fetching Logic Tests (`test_fetcher.py`)
 - *Fetch by Title*: Ensures that a literary entry can be retrieved correctly based on title.
 - *Mocked Data Retrieval*: Validates that fetching functions work correctly using mock JSON data.
 
@@ -529,7 +529,7 @@ Before I provide a list of all the code editors/IDE's + favourite shortcuts I ha
 
 ## Examples:
 
-### **Using Tuples Instead of Lists**
+### Using Tuples Instead of Lists
 ```python
 def get_supported_text_types():
     return ("Poem", "Short Story", "Apophthegm", "Other")
@@ -537,7 +537,7 @@ def get_supported_text_types():
 
 Tuples are immutable and therefore prevent accidental modifications.
 
-### **Avoiding Mutable Defaults**
+### Avoiding Mutable Defaults
 ```python
 def fetch_favourites(library=None):
     if library is None:
@@ -547,7 +547,7 @@ def fetch_favourites(library=None):
 
 Prevents accidental mutations by returning a new tuple.
 
-### **Side-Effect-Free String Formatting**
+### Side-Effect-Free String Formatting
 ```python
 def format_title(title):
     return title.strip().title()
@@ -556,7 +556,7 @@ def format_title(title):
 Does not modify the original title, it just returns a formatted version of it. 
 Present only in the README, since it is not needed in the program.
 
-### **Applying Formatting to Multiple Entries**
+### Applying Formatting to Multiple Entries
 ```python
 def apply_to_entries(entries, transform_function):
     return [transform_function(entry) for entry in entries]
@@ -567,7 +567,7 @@ formatted_entries = apply_to_entries(library, format_title)
 
 Allows flexible processing of text entries.
 
-### **Returning Functions for Dynamic Formatting**
+### Returning Functions for Dynamic Formatting
 ```python
 def get_formatter(style):
     if style == "uppercase":
@@ -581,7 +581,7 @@ print(formatter("hello world"))
 ```
 Returns another function dynamically.
 
-### **Closure with State**
+### Closure with State
 ```python
 def counter():
     count = 0
@@ -598,7 +598,7 @@ print(count_up())
 
 The ``increment()`` function remembers count (closure).
 
-### **Lambda Function for Sorting**
+### Lambda Function for Sorting
 ```python
 sorted_entries = sorted(library, key=lambda x: x["title"])
 ```
