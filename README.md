@@ -521,6 +521,91 @@ Before I provide a list of all the code editors/IDE's + favourite shortcuts I ha
 
 #### 14. Functional Programming
 
+- only final data structures
+- (mostly) side-effect-free functions
+- the use of higher-order functions
+- functions as parameters and return values
+- use closures / anonymous functions
+
+## Examples:
+
+### **Using Tuples Instead of Lists**
+```python
+def get_supported_text_types():
+    """Returns an immutable collection of text types."""
+    return ("Poem", "Short Story", "Apophthegm", "Other")
+```
+
+Tuples are immutable and therefore prevent accidental modifications.
+
+### **Avoiding Mutable Defaults**
+```python
+def fetch_favourites(library=None):
+    if library is None:
+        library = load_all_libraries()
+    return tuple(entry for entry in library if entry.get("favourite") == "yes")
+```
+
+Prevents accidental mutations by returning a new tuple.
+
+### **Side-Effect-Free String Formatting**
+```python
+def format_title(title):
+    return title.strip().title()
+```
+
+Does not modify the original title, it just returns a formatted version of it. 
+Present only in the README, since it is not needed in the program.
+
+### **Applying Formatting to Multiple Entries**
+```python
+def apply_to_entries(entries, transform_function):
+    return [transform_function(entry) for entry in entries]
+
+# example
+formatted_entries = apply_to_entries(library, format_title)
+```
+
+Allows flexible processing of text entries.
+
+### **Returning Functions for Dynamic Formatting**
+```python
+def get_formatter(style):
+    if style == "uppercase":
+        return str.upper
+    elif style == "lowercase":
+        return str.lower
+    return str.title
+
+formatter = get_formatter("uppercase")
+print(formatter("hello world"))
+```
+Returns another function dynamically.
+
+### **Closure with State**
+```python
+def counter():
+    count = 0
+    def increment():
+        nonlocal count
+        count += 1
+        return count
+    return increment
+
+count_up = counter()
+print(count_up()) 
+print(count_up())
+```
+
+The ``increment()`` function remembers count (closure).
+
+### **Lambda Function for Sorting**
+```python
+sorted_entries = sorted(library, key=lambda x: x["title"])
+```
+
+Uses a lambda function to define a sorting key in a single line.
+
 ---
 
 ## **Demo**
