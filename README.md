@@ -480,6 +480,10 @@ Before I provide a list of all the code editors/IDE's + favourite shortcuts I ha
   - [Fabric Framework](https://github.com/danielmiessler/fabric):  
       Used it for its sleek and simple solution to leverage LLMs directly from the command line, enhancing workflow efficiency and allowing for swift experimentation.
 
+The following picture serves to exemplify the usage of **fabric** in the command-line:
+
+![Understanding Sphinx with AI](media/fabric_example.png)
+
 ---
 
 ### 14. Functional Programming
