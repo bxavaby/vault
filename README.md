@@ -489,7 +489,7 @@ Incorporated **unit tests** within the codebase to improve **stability and maint
 #### 12. IDE
 Before I provide a list of all the code editors/IDE's + favourite shortcuts I have used while working on *Verse Vault*, I must clarify that **Micro** was my top pick most of the times, **VS Code** was used only when I felt the need to use **Copilot**, which I talk about in the next task, and as for **Neovim**, it was sort of experimental, but a great learning experience.
 
-- **Code Editors**:
+- **Favorite Shortcuts**:
 
   - **Micro**:
     - `Ctrl+S` → Save file
