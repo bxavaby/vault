@@ -473,20 +473,20 @@ Before I provide a list of all the code editors/IDE's + favourite shortcuts I ha
 
 ---
 
-### 13. AI Coding
+#### 13. AI Coding
 
 - **AI Integration**:
   - Copilot was set up inside VS Code for prompt code assistance and debugging. I had already configured it through GitHub, by connecting it to VS Code and installing the plug-in.
   - [Fabric Framework](https://github.com/danielmiessler/fabric):  
       Used it for its sleek and simple solution to leverage LLMs directly from the command line, enhancing workflow efficiency and allowing for swift experimentation.
 
-The following picture serves to exemplify the usage of **fabric** in the command-line:
+### The image below illustrates the use of **Fabric** in the CLI:
 
 ![Understanding Sphinx with AI](media/fabric_example.png)
 
 ---
 
-### 14. Functional Programming
+#### 14. Functional Programming
 
 ---
 
