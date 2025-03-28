@@ -2,7 +2,7 @@
 
 A private library for storing and exploring a collection of short texts, poems, apophthegms, and other literary pieces. The program provides a simple and interactive way to browse, fetch, and manage a library of texts.
 
-*— B.F.*
+*— B. F.*
 
 ---
 
